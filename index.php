@@ -10,10 +10,48 @@ $age = 15;
 if(($age > 12) && ($age<20)){
     echo "You are a teenager <br>";
 }
-if($num <0){
-    echo "The value of the number is negative"
-} elseIF {
 
+
+$a = 20;
+$b = 10;
+if($a == $b){
+    echo "They are equal <br>";
+}else{
+    echo "They are not equal <br>";
 }
-?> 
 
+$day = "Monday";
+switch($day){
+case 'Monday':
+echo "Start of the week";
+break;
+case 'Tuesday':
+echo "Let's get throught the week <br>";
+break;
+case 'Wednesday':
+echo "The middle of the week <br>";
+break;
+case 'Thursday':
+echo "Weekend is here! <br";
+break;
+case 'Friday':
+echo "Almost weekend <br>";
+break;
+default:
+echo "Invalid day <br>";
+break;
+}
+
+#while loop
+$x = 1;
+while($x <= 5){
+    echo "The number is:$x <br>";
+
+    $x++;
+}
+$y = 0;
+do{
+    echo"The number is: $y <br>";
+    $y++;
+}while($y <=5);
+?>
