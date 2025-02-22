@@ -8,10 +8,10 @@ $grade = array(
 );
 
 
-foreach ($grade as $subject => $grade):{
+foreach ($grade as $subject => $grade){
     echo "subject: ".$subject . "-> Grade: ".$grade;
     echo "<br>";
-}
+};
 
 
 
