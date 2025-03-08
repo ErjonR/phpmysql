@@ -2,12 +2,12 @@
 
 $host =  "localhost";
 $user = "root";
-$pass = " ";
+$pass = "";
 
 try{
     $conn = new PDO("mysql:host=$host;",$user, $pass);
 
-    $sql = "CREATE DATABASE erjoniii";
+    $sql = "CREATE DATABASE erjoniii123";
 
     $conn->exec($sql);
 
