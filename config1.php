@@ -1,13 +1,12 @@
 <?php
-$users = 'root';
-$pass = '';
-$server = 'localhost';
-$dbname = 'mms';
+    $user = 'root';
+    $pass = '';
+    $server = 'localhost';
+    $dbname = 'mms1';
 
-try{
-    $conn = new PDo("mysql:host=$server; dbname = $dbname", $user, $pass);
-}catch (PDOExpection $e) {
-    echo 'error: '. $e->getMessage();
-}
-
+    try {
+        $conn = new PDO("mysql:host=$server; dbname = $dbname", $user, $pass );
+    }catch (PDOException $e) {
+        echo 'error:'. $e->getMessage();
+    }
 ?>
