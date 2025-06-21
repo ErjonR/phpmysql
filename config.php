@@ -1,19 +1,12 @@
 <?php
-    session_start();
-
+    $user = 'root';
+    $pass = '';
     $server = 'localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'dbtest1';
+    $dbname = 'mms';
 
-    try{
-        $connect = new PDO("mysql:host=$server;dbname=$dbname", $username, $password);
-
-    }catch(Exeption $e){
-        echo "Something went wrong";
+    try {
+         $conn = new PDO("mysql:host=$server;dbname=$dbname", $user, $pass);
+    }catch (PDOExpection $e) {
+        echo 'error:'. $e->getMessage();
     }
-
-
-
-
 ?>
